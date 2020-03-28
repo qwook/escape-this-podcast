@@ -29,7 +29,6 @@ window.addEventListener('load', () => {
   // Allow action titles to be toggled on and off.
   let actionTitles = document.getElementsByTagName("action-title");
   for (let actionTitle of actionTitles) {
-    actionTitle.textContent = 'ACTION: ' + actionTitle.textContent;
     let description = actionTitle.parentElement.getElementsByTagName(
       "action-description"
     )[0];
