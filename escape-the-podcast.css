@@ -1,0 +1,55 @@
+
+html {
+  font-family: 'Crimson Text', serif;
+  padding: 30px;
+}
+
+body {
+  max-width: 640px;
+}
+
+observable {
+  display: block;
+  margin-bottom: 0.5em;
+}
+
+observable-title {
+  display: block;
+  font-weight: bold;
+  cursor: pointer;
+  user-select: none;
+}
+
+observable-title:hover {
+  color: grey;
+}
+
+observable-description {
+  display: none;
+}
+
+observable-actions {
+  display: none;
+}
+
+action {
+  display: list-item;
+  list-style-position: inside;
+  list-style-type: "\00BB \0020";
+  padding-left: 1em;
+}
+
+action-title {
+  color: blue;
+  cursor: pointer;
+  user-select: none;
+}
+
+action-title:hover {
+  text-decoration: underline;
+}
+
+action-description {
+  display: none;
+  padding-left: 2em;
+}

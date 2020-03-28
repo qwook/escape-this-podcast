@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+  <link href="https://fonts.googleapis.com/css?family=Crimson+Text&display=swap" rel="stylesheet">
+  <link href="./escape-the-podcast.css" rel="stylesheet" />
+  <script src="./escape-the-podcast.js"></script>
+  <h1>The Art Studio</h1>
+  <h2>Notes</h2>
+  <p>Thank you so much to Anna Engelke and Josquin Desprez, our Patreon donors
+    whose names were given to the characters in this room!
+  </p>
+  <p>
+    This room is probably the one I’d call most doable for a single player out of all recent
+    episodes. But I’ve been wrong before, so who knows? Playing with two is usually more
+    fun, anyway.
+  </p>
+  <h2>Introduction</h2>
+  <p>
+    You really don’t want to spend your afternoon on some extra credit assignment, but
+    when you’re barely pulling a C+ in physics and your parents are very, very aware of
+    that fact, you don’t have much choice. So you head on over to the address Doc Bill
+    gave you and enter his not-so-secret lab.
+  </p>
+  <p>
+    Inside, you see an array of all the top students from your class, along with a couple
+    of the okay ones. You narrow your eyes. Is this really an extra credit assignment?
+    When you ask this, your classmates all give each other sidelong glances. That’s a big
+    no. You turn to the most trustworthy one and demand to know what’s actually going
+    on, but Doc Bill interrupts with exasperation.
+  </p>
+  <p>
+    “It’s time travel! We need you to go back in time and fix my assistant’s misdeeds! I’ve
+    explained this too many times now, everyone else here is getting sick of it. Just put
+    on this special science watch and get in the machine.”
+  </p>
+  <p>
+    Yeah… you turn back to the other students. And they all nod to confirm, that’s
+    basically the whole story. Okay, you have to go back some unknown amount of time,
+    to some unknown place, to fix some unknown problem caused by some unknown
+    assistant. Sure, nothing wrong with that. But your classmates all seem pretty
+    cheerful about this whole arrangement, so how bad could it possibly be? Maybe
+    travelling through time gives you some amazing new appreciation for your own life,
+    or something cliché like that.
+  </p>
+  <p>
+    Again, Doc Bill ushers you towards the big machine against the wall. “My computer
+    readout tells me the consequences of Greg’s actions, and this time, it says that some
+    famous work that was supposed to have been done has been erased from the
+    timeline. He didn’t destroy it; whatever it was, it was never made. Like if Chuck Berry
+    had never created Johnny B. Goode, if he’d never found that ‘new sound’ he was
+    looking for. You need to go back and find out why!”
+  </p>
+  <p>
+    You don’t get time to ask another question as he slams his hand on a button and the
+    machine roars to life, shaking and moving all the molecules in your body. When your
+    head stops spinning, you realise you’re no longer in the lab. You’re in a brightly lit,
+    brightly coloured basement – and there are two people in here with you! Quickly you
+    duck behind the nearest object, a table, and hope for the best. Fortunately (question
+    mark), the two of them, a man and a woman, seem to be deeply embroiled in a
+    shouting match and haven’t noticed you in the slightest. You can’t understand most of
+    what they’re saying because it sounds like very aggressive Spanish that’s way
+    beyond anything you learned in school, but occasionally the man slips into other
+    languages, including English. So you manage to catch a few key sentences from him:
+  </p>
+  <p>
+    “It’s not working! The colour isn’t like last time! Why did she clean everything? She
+    ruined everything! I cannot keep starting again! Burn it! Without the ingredients for
+    my perfect new colour, this is nothing! I quit forever! The piece can finish itself!”
+  </p>
+  <p>
+    The woman is mostly sighing impatiently and saying, “Josquin –” before being rudely
+    spoken over, but even if you could hear her properly, you believe she’s only speaking
+    Spanish. She gets in what sounds like one good riposte before Josquin yells one final
+    thing, in French this time, and she grits her teeth and sits down. Josquin,
+    meanwhile, storms up a set of stairs through a hatch in the ceiling, then slams it
+    shut. You can still hear his shouts from the other side.
+  </p>
+  <p>
+    Is this the Chuck Berry you’re supposed to be helping? Okay, you suppose not all
+    creators can be the nicest people. You pop your head up and take a look at the room.
+    It’s immediately clear that this is an art studio: in the centre of the room is a large
+    wooden easel, and the table you hid behind, against the west wall, is covered in tubes
+    of paint, a paint scraper, and a funny little machine. You’re surprised you didn’t
+    notice the smell. The stairs are in the lower east corner, and there are two more
+    smaller tables hugging the east wall, one with a bowl of fruit, and one with papers
+    [‘copies’, in these notes]. You see a pile of canvases on the floor, and a violin case
+    not far from them. Near the fruit table is a vase, and a long lounge chair sits to the
+    north of the easel. And perched on that chair, sitting perfectly still, is the woman you
+    heard earlier. She must be the artist’s poser. Her eyes are following you, so you’ve
+    clearly been spotted, but she doesn’t seem to care. Maybe Josquin often has
+    strangers hiding in his studio.
+  </p>
+  <p>
+    Well… best figure out how to give this fiery guy his ‘new sound’ – er, his new colour.
+  </p>
+  <h2>Observables</h2>
+  <observable id='canvases'>
+    <observable-title>Canvases</observable-title>
+    <observable-description>
+      There are seven canvases, all medium-sized rectangles, smaller than the
+      one currently on the easel. You wonder if they might be rejects. There’s
+      something rather frail about them: they’re thin, even see-through in
+      places. And now that you’re looking closely, it looks like Josquin did
+      attempt to lightly sketch on them with his draft pencil before very
+      quickly giving up. They appear to be sketches of a woman, perhaps his
+      sitter before the current one, capturing her in the moment of biting
+      into a piece of fruit. The fruit changes in each image, but she’s
+      consistently biting into them. There’s one odd detail you notice,
+      something in the background: each one has a small circle on it, in a
+      different spot each time. A few are at the top, a couple near the
+      middle, and a couple near the bottom. The thing is, the sketch is
+      clearly supposed to be set in this basement, but you don’t see any
+      circles anywhere near where he’s drawn them to
+      be.
+    </observable-description>
+    <observable-actions>
+      <action>
+        <action-title>Laying a canvas over one of the copies.</action-title>
+        <action-description>
+          As it turns out, the small canvas and the large paper come out to
+          be exactly the same size. They overlay perfectly, and with the
+          thinness of the canvas, you can see the writing on the paper right
+          through it. The circle on the canvas even lines up with a number in
+          the writing: 1. Right up in the top left corner.
+        </action-description>
+      </action>
+      <action>
+        <action-title>Overlaying all the canvases over the copy.</action-title>
+        <action-description>
+          You place each canvas one at a time over the paper, and each time,
+          the pencil circle lines up perfectly with a number or letter. The
+          second one from the left lines up with an C. Then the next one is a
+          small h. After that comes a 2, then a P, then a 3, then an
+          O.
+        </action-description>
+      </action>
+    </observable-actions>
+  </observable>
+  <observable>
+    <observable-title>Chair</observable-title>
+    <observable-description>
+      You try not to look at the model too much as you give the chair a close
+      examination. It’s a deep maroon colour and looks pristinely brand new. No holes, no
+      tears, no stains. This must seriously have just been bought. There aren’t any funny
+      recesses or anything for you to reach into.
+    </observable-description>
+    <observable-actions>
+      <action>
+        <action-title>After staining a spot of the chair with cherry, pear and orange juice,
+          tearing that piece of fabric.</action-title>
+        <action-description>
+          The juice must have loosened it up, because it doesn’t take much to tear a square
+          of fabric away. Yeah, Josquin’s wife is going to mega hate you.
+        </action-description>
+      </action>
+    </observable-actions>
+  </observable>
+  <observable>
+    <observable-title>Copies</observable-title>
+    <observable-description>
+      What you see are two surprisingly large pieces of paper with long, wordy
+      scripts calligraphied on them. You can’t read the language, but the lettering is
+      unusual: instead of fancy cursive, each letter is separated from the ones around it
+      with more space than you’d normally expect. Maybe that’s just how it was done back
+      then? Back… now? Interestingly, the two papers are identical in every way – even
+      down to a small stain in the bottom corner. That definitely isn’t a coincidence. You
+      believe Josquin must be, along with a regular artist, an expert at copying. You hope
+      you aren’t witnessing some centuries-old forgery racket.
+    </observable-description>
+  </observable>
+  <observable>
+    <observable-title>Easel</observable-title>
+    <observable-description>
+      Upon the wooden easel sits a big canvas, the artwork on it partially completed.
+      The whole thing has a draft sketch in pencil, and Josquin has been steadily filling
+      up sections with paint, starting from the bottom. The sketch depicts the scene in
+      front of it: the model posing on the lounge chair. Her facial expression is one of
+      distaste, and her hands… hm, they’re bent up towards her face, but it looks like they
+      weren’t quite finished, or Josquin erased them a little. Maybe she was meant to be
+      holding something but he’d changed his mind about what. Josquin has painted the
+      floor just fine, and seems to have stopped just as he was getting to the chair. A bit of
+      the paint in this area looks older, like it was painted some days ago, and the colour
+      is very striking; the maroon gleams with a magical light of its own. The bit of chair
+      with the more recent paint – today’s paint – isn’t quite as good. It’s almost the same
+      colour, but it’s missing the vibrancy. That explains the outburst you heard. On the
+      very top of the image, still in pencil, is what looks like a working title. You can’t read
+      it, of course – you don’t even think you can pronounce the first word. ‘Quisquillosa’?
+      Something like that. As you struggle to say it, you hear a small sound of derision
+      come from in front of you. The model? You peer around the canvas, and she says in
+      accented English, “It means <em>The Fussy Eater Tries.</em>”
+    </observable-description>
+    <observable-actions>
+      <action>
+        <action-title>Taking the painting off the easel.</action-title>
+        <action-description>
+          You remove The Fussy Eater from the
+          easel, careful to not touch any of the wet paint. There’s nothing on the back of the
+          painting, but on the easel itself, you spot a message written into the wood. Problem
+          is, it’s naturally written in Spanish.
+        </action-description>
+      </action>
+      <action>
+        <action-title>Asking Anna to translate the message on the wood.</action-title>
+        <action-description>
+          She walks around the
+          other side of the easel and appraises the hidden message. “It’s like a strange shopping
+          list,” she says critically. “Or a recipe. ‘Ingredients: base, spruce shavings, violet
+          flower, and a stained fabric of many fragrances.’ He’s a funny man.”
+        </action-description>
+      </action>
+      <action>
+        <action-title>Painting the couch in The Fussy Eater Tries with the paint you created.</action-title>
+        <action-description>
+          Refer to conclusion!
+        </action-description>
+      </action>
+    </observable-actions>
+  </observable>
+  <observable>
+    <observable-title>Fruits</observable-title>
+    <observable-description>
+      It’s your idyllic fruit bowl from all those classic beginner painting classes.
+      There’s a single apple, banana, pear, orange, cherry and mango. They all look
+      excellent and edible, but if they’re supposed to be used for art, maybe you should be
+      careful about what you do with them.
+    </observable-description>
+    <observable-actions>
+      <action>
+        <action-title>Shifting the fruits around.</action-title>
+        <action-description>
+          You move some of the larger pieces of fruit
+          aside, and sitting in the bottom of the bowl you spy a piece of paper. It’s tiny, just a
+          corner scrap, really. Just two letters are written on it, an A and a C, and they can’t
+          have been too important because they’ve been crossed out. Not just once, either:
+          they’ve been crossed out with five horizontal lines.
+        </action-description>
+      </action>
+      <action>
+        <action-title>Biting into the cherry, as specified on the canvases and copies.</action-title>
+        <action-description>
+          You
+          take a decent bite of the cherry that amounts to about half of its volume. It’s
+          delicious. Not only that, it’s super juicy, a huge drip falls down your chin, and
+          another goes flying a few feet away – landing right on the chair. Oops. That might
+          leave a mark.
+        </action-description>
+      </action>
+      <action>
+        <action-title>Dripping cherry, then pear, then orange juices onto the same spot on
+          the chair.</action-title>
+        <action-description>
+          You take bites of the three fruits and allow their juices to pool on a single
+          spot on the chair. Anna looks dismayed, but you remind her of the message on the
+          easel. She still doesn’t look convinced. You let the juices sit and soak for a minute
+          until they’ve left a decent-sized dark, sweet-smelling splotch on the material. Not
+          only that, it looks like it’s having a weakening effect on it, making it more prone to
+          ripping. Josquin’s wife is going to hate you.
+        </action-description>
+      </action>
+    </observable-actions>
+  </observable>
+  <observable>
+    <observable-title>Machine</observable-title>
+    <observable-description>
+      The machine almost resembles a miniature cooking pot. It’s got a little lid
+      and everything, which has a long interior attachment on it. It’s made of stone, and
+      when you look inside the bowl, it’s basically empty but you do see the faint dried
+      remains of coloured powders. This must be a specialised artist’s mortar and pestle.
+    </observable-description>
+    <observable-actions>
+      <action>
+        <action-title>Mixing incorrect or random things for pigment.</action-title>
+        <action-description>
+          You toss a couple of
+          bits and pieces into the machine, put the lid down, and spin the thing that makes it
+          grind. You give it a minute, then open the lid back up. Ugh, well, it grinded all right.
+          But it looks like ground mush. Nothing like paint. Better scrape that onto the floor
+          and start fresh.
+        </action-description>
+      </action>
+      <action>
+        <action-title>Mixing pigment base, spruce shavings, violet flower and fruit-stained
+          couch fabric.</action-title>
+        <action-description>
+          Pigment base first, then small amounts of the wood shavings, a few
+          bits of violet flower petal, and of course the small patch of couch that you so
+          thoroughly destroyed... you stick them all in. And you close the lid and grind them
+          up. You’re not taking any changes; you grind them hard. And when you finally feel
+          like whatever’s inside is smooth, you open it up again. And wow. That is the most
+          spectacular, radiant maroon paint you’ve ever seen. You feel so proud. You hope
+          Josquin sees it before he quits painting forever!
+        </action-description>
+      </action>
+    </observable-actions>
+  </observable>
+  <observable>
+    <observable-title>Paints</observable-title>
+    <observable-description>
+      There are heaps of tubes of paint, although they’re not really the tubes you’re
+      used to. They look home-made and of questionable material. You think you
+      remember reading that the old classic artists generally ground up their own pigments
+      and stored them in glass or… ugh… pig bladders. These are definitely not glass. You
+      try to ignore that and look inside. You find red, blue, yellow, black and white. Lots of
+      tubes of each. They must be the easiest to make.
+    </observable-description>
+  </observable>
+  <observable>
+    <observable-title>Paint scraper</observable-title>
+    <observable-description>
+      It’s a small, flat metal tool that can make very precise scrapings if
+      needed.
+    </observable-description>
+    <observable-actions>
+      <action>
+        <action-title>Scraping off some spruce from the front piece of the violin.</action-title>
+        <action-description>
+          If it
+          didn’t have so many scrapes already, you’d feel terrible about doing this to an
+          authentic 18th Century violin. But you run the paint scraper along its surface, and
+          some thin, crisp shavings of wood curl off.
+        </action-description>
+      </action>
+    </observable-actions>
+  </observable>
+  <observable>
+    <observable-title>Poser</observable-title>
+    <observable-description>
+      She’s sitting quite still, giving off the impression that she isn’t sure if it’s okay
+      for her to relax from her stiff art pose. While she isn’t freaked out by your appearance,
+      she does look a bit bewildered by what you’re doing poking around Josquin’s stuff.
+      You wonder if she can understand you; you ask her name. She hesitates, then in
+      lightly accented English answers, “Anna.”
+    </observable-description>
+    <observable-actions>
+      <action>
+        <action-title>Asking her to translate the note found in the stairs’ hatch.</action-title>
+        <action-description>
+          Anna takes
+          the paper and translates for you: “It says to use twice as much blue as the pictured
+          instructions say.”
+        </action-description>
+      </action>
+      <action>
+        <action-title>Asking about the drama between Josquin and ‘she’.</action-title>
+        <action-description>
+          “Well, obviously I
+          don’t listen in on Josquin’s conversations with his wife, but I believe it happened
+          right after I was hired. The last model wasn’t working out, you see. He’d discovered
+          a ‘new colour’ for the paint on the chair, and her complexion didn’t suit it. But then
+          his wife went and threw out the chair and replaced it with a new one, because it was
+          getting tattered and stained. Cleaning, she said. And she cleaned up other things,
+          too, like the key for Josquin’s violin, and a few other pieces. He was <em>furious.</em> Said it
+          ruined his whole vision. He’s been in a temper ever since.”
+        </action-description>
+      </action>
+      <action>
+        <action-title>Handing her the violin without music.</action-title>
+        <action-description>
+          Anna takes the violin from you and
+          examines it from all angles. “Very nice,” she says. “I’ve had some training myself.”
+          And she starts stringing a nice tune, pianissimo so the sound doesn’t travel upstairs.
+        </action-description>
+      </action>
+      <action>
+        <action-title>Handing her the violin with sheet music.</action-title>
+        <action-description>
+          Her eyes light up as she appears
+          to recognise the piece. “I rehearsed this as a child! Let’s see if I can remember...” She
+          plays the violin, fingers moving quickly, and you just stand and enjoy the
+          performance. But then, as the song seems to be reaching its resolution, she stops.
+          “There’s a bar missing,” she points out. “I remember the last few notes are F, C and
+          D, but then there’s the final chord... I just can’t remember it. Who would purchase
+          incomplete music?”
+        </action-description>
+      </action>
+    </observable-actions>
+  </observable>
+  <observable>
+    <observable-title>Stairs</observable-title>
+    <observable-description>
+      The stairs are wooden, rickety and echoey and go up to a hatch in the ceiling,
+      presumably to the rest of the house. Surely it would’ve been a bit rude to Anna for
+      Josquin to have locked it behind him, right? You give the hatch a test shove. It barely
+      moves – definitely blocked off somehow – but something falls through the thin gap
+      separating the hatch from the ceiling. It’s a small fragment of art paper, with a few
+      words scribbled on it.
+    </observable-description>
+    <observable-actions>
+      <action>
+        <action-title>Have two people jump on the third step from the bottom, as indicated
+          by the violin case inscription.</action-title>
+        <action-description>
+          You walk up three stairs, and then both of you
+          simultaneously jump as hard as you can on the wooden step. You hear a loud crack
+          and worry you’ve broken everything – but it’s only the side of the step, and it doesn’t
+          actually look broken. It looks like you’ve opened a secret panel. You rush back down
+
+          to take a look, and inside you find a small pile of sheet music, along with a precious-
+          looking <u>box</u> the size of a large book. It’s locked, and on its lid are nine buttons
+
+          arranged in a square. The first eight have letters of the alphabet written on them (A
+          to H), and the final one is blank.
+        </action-description>
+      </action>
+    </observable-actions>
+  </observable>
+  <observable>
+    <observable-title>Vase</observable-title>
+    <observable-description>
+      The vase is tall with a very narrow neck, not even wide enough for your hand.
+      A single delicate, thin-stemmed red carnation sticks out of it. It’s beautiful, the
+      freshest flower you’ve ever seen or smelled. The vase is white porcelain (which you
+      believe wasn’t made in Europe until the 1700s or so, giving you a better idea of the
+      time period), and it has a rather unusual pattern painted on it.
+      <hr />
+      <a href="https://drive.google.com/file/d/1U2vnt7nCpfZjMIjKhPumcTKQY8I6VbTL/view">
+        [Show supplementary vase image]
+      </a>
+    </observable-description>
+    <observable-actions>
+      <action>
+        <action-title>Peering inside.</action-title>
+        <action-description>
+          It’s super dark inside, but you <em>think</em> you see a glimmer of
+          something shiny in there.
+        </action-description>
+      </action>
+      <action>
+        <action-title>Tipping it upside down.</action-title>
+        <action-description>
+          The carnation falls out – and not only that, but a
+          small key. Someone must have carelessly dropped it in there while replacing the
+          flower. Speaking of, you put the carnation back in.
+        </action-description>
+      </action>
+      <action>
+        <action-title>Pouring half a tube of black, a whole tube of blue, and a quarter (ish) of
+          red into the vase (with the carnation in it).</action-title>
+        <action-description>
+          The thick oil paints ooze down into the
+          vase. This feels like a waste, but the instructions were right there... what could this
+          be achieving? Nothing’s happening.
+        </action-description>
+      </action>
+      <action>
+        <action-title>Pouring half a tube of black, TWO whole tubes of blue, and a quarter (ish)
+          of red into the vase.</action-title>
+        <action-description>
+          Okay. This must do something. You watch for a while, and you
+          start to notice something. The stem of the carnation is changing colour. It’s like the
+          paints are seeping up inside it, crawling their way up to the petals – and when they
+          reach them, the petals start changing colour, too. The red is still there, but heavily
+          tinged with blue and black, until eventually the whole carnation is a deep, dark violet.
+          I mean, it’s still a carnation, just a violet carnation.
+        </action-description>
+      </action>
+    </observable-actions>
+  </observable>
+  <observable>
+    <observable-title>Violin case</observable-title>
+    <observable-description>
+      You can tell from the size and shape that it’s a violin case, and when
+      you pick it up, it’s weighty. It may in fact have a violin inside. If it does, however, it
+      must be a very precious violin; Josquin has had the case fitted with a lock requiring
+      a key. Not only that, when you flip it over, there’s something inscribed into the
+      bottom: <em>A jump of two, a step of one, two jump right here and then be done.</em>
+    </observable-description>
+    <observable-actions>
+      <action>
+        <action-title>Unlocking it with key found in vase.</action-title>
+        <action-description>
+          It unlocks! You’re half expecting
+          a weapon and a pile of cash, but no, it’s just a violin. And a rather ratty old one at
+          that. The wooden front piece has several odd scrapes across it, some of them wide
+          enough that they’re almost gauges.
+        </action-description>
+      </action>
+      <action>
+        <action-title>Attempting to play violin.</action-title>
+        <action-description>
+          While it’s a very nice violin, you’re sure,
+          your ability to play it is another matter. You were more of a guitar person. Who learns
+          the violin these days, anyway? Well, not ‘these days’. Er... you know what you mean.
+        </action-description>
+      </action>
+    </observable-actions>
+  </observable>
+  <observable>
+    <observable-title>Box</observable-title>
+    <observable-description>
+      A box the size of a large book. It’s locked, and on its lid are nine buttons arranged
+      in a square. The first eight have letters of the alphabet written on them (A to H), and
+      the final one is blank.
+    </observable-description>
+  </observable>
+</body>
+
+</html>
